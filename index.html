@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="HTML5 file access research">
+  <meta name="author" content="barbara prusiewicz">
+
+  <title>Research</title>
+  
+  <style>
+    h1 {
+      text-align: center;
+    }
+    input[type='file'] {
+      color: transparent;
+    }
+    #save, #read {
+      visibility: hidden
+    }
+  </style>
+</head>
+
+<body>
+    <h1>Simple Local File Access Demo</h1>
+    <input type="file" id="files" name="files" accept=".txt" />
+    <output id="selected"></output>
+    <button type="button" id="read" >Read</button>
+    <p id="contents"></p>
+    <button type="button" id="save" >Save 100</button>  
+</body>
+
+<script src="./demo.js"></script>
+<!-- from https://github.com/eligrey/FileSaver.js/ -->
+<script type="module" src="./FileSaver.js"></script>
+
+</html>
